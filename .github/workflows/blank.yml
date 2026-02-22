@@ -1,17 +1,1 @@
-name: Kundalik Login Bot
 
-on:
-  schedule:
-    - cron: '0 5 * * *'
-  workflow_dispatch:
-
-jobs:
-  login:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Send Telegram Message
-        run: |
-          curl -s "https://api.telegram.org/bot${{ secrets.TOKEN }}/sendMessage" \
-          -d chat_id=${{ secrets.CHAT_ID }} \
-          -d text="Kundalikga kirish vaqti!"
