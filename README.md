@@ -1,0 +1,2 @@
+# kundalikbot
+Sardor musurmonov
